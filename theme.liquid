@@ -1,0 +1,34 @@
+<style>
+  @media only screen and (max-width: 767px){
+   .product-slider .slick-prev, .product-slider .slick-next {
+     top: 45%; width: 35px; height: 35px; border: 1px solid #FFF; background: #FFF !important;   z-index: 1; border-radius: 100%; box-shadow: 3px 3px 6px #0000008f; padding:8px;} 
+	.product-slider .slick-prev:before { content: '\f060'; font-family: 'Font Awesome\ 5 Free'; font-weight: 900; color:#000;}
+	.product-slider .slick-next:before { content: '\f061'; font-family: 'Font Awesome\ 5 Free'; font-weight: 900; color:#000;}
+	.product-slider .slick-prev { left: 2%;}
+	.product-slider .slick-next { right: 2%;}
+	.product-slider .slick-prev.slick-disabled,.product-slider .slick-next.slick-disabled{ opacity: 0;}
+	.product-slider .slick-dots li button:before {font-size: 15px;}
+	.product-slider .slick-dots li { margin: 0 4px;}
+    .slick-dots{
+      bottom:0px !important;
+    }
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
+<script>
+  $(function(){
+   $('.product-slider').slick({
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               infinite: false,
+               arrows:false,
+               dots:true,
+               nextArrow: '<i class="fas fa-arrow-right slick-next"></i>',
+               prevArrow: '<i class="fas fa-arrow-left slick-prev"></i>',
+   });   
+  });
+</script>
